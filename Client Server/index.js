@@ -3,6 +3,8 @@ const port = 8000;
 
 const app = express();
 
+app.use('/',require('./routes/masterRouter.js'))
+
 app.listen(port,function(err){
     if(err){
         console.log('There is an err',err);
